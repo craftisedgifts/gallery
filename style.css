@@ -1,5 +1,3 @@
-
-
 /* Reset some default styles */
 body,
 h1,
@@ -10,9 +8,7 @@ ul,
 li {
   margin: 0;
   padding: 0;
-
 }
-
 .logo {
   font-family: 'Sedgwick Ave Display', cursive;
   font-size: 2.5rem;
@@ -20,7 +16,6 @@ li {
   color: #141E46;
   text-decoration: none;
 }
-
 
 p>i {
   font-family: 'Dancing Script', cursive;
@@ -66,35 +61,25 @@ header {
 
   }
 }
-
-
-
 .hero h1 {
   font-size: 3rem;
   margin-bottom: 1rem;
 }
-
 /* Banner styles */
 .banner {
   background-color: #f0f0f0;
   text-align: center;
   padding: 1rem;
 }
-
 /* Product gallery styles */
 .product-gallery {
-
-  gap: 1rem;
-
- 
-  margin: 30px 20px 0 20px;
-
-
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  /* 2 columns for mobile */
-  gap: 20px;
-  /* Adjust the gap between products */
+gap: 1rem;
+margin: 30px 20px 0 20px;
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+/* 2 columns for mobile */
+gap: 20px;
+/* Adjust the gap between products */
 }
 
 @media (min-width: 580px) {
@@ -103,7 +88,6 @@ header {
     /* 4 columns for desktop */
   }
 }
-
 @media (min-width: 780px) {
   .product-gallery {
     grid-template-columns: repeat(4, 1fr);
@@ -124,16 +108,11 @@ header {
 .product-card:hover {
   transform: scale(1.05);
 }
-
 .product-card img {
   max-width: 100%;
   height: auto;
   border-radius: 50%;
-
-
-
 }
-
 /* Product popup styles */
 .popup {
   display: none;
@@ -162,14 +141,11 @@ header {
 .popup-content img {
   max-width: 100%;
   border-radius: 50%;
-
 }
-
 @keyframes pulse {
-
-  0%,
-  100% {
-    transform: scale(1);
+ 0%,
+100% {
+transform: scale(1);
   }
 
   50% {
@@ -198,9 +174,6 @@ header {
 
   }
 }
-
-
-
 .close-popup {
   position: absolute;
   top: 30px;
@@ -211,15 +184,11 @@ font-size: 40px;
   display: inline-block;
 
 }
-
 /* Adjust popup content position */
 .popup-content {
   position: relative;
   border-radius: 20%;
 }
-
-
-
 @media screen and (min-width:900px) and (max-width:3000px) {
 
   .popup-content {
@@ -246,14 +215,10 @@ font-size: 40px;
  text-align: left;
   
 }
-
-
-
 #alogo {
   color: rgb(194, 194, 183);
   text-decoration: none;
-
-  font-family: 'Sedgwick Ave Display', cursive;
+ font-family: 'Sedgwick Ave Display', cursive;
   font-size: 2.5rem;
   line-height: 80px;
 
@@ -274,17 +239,11 @@ font-size: 40px;
  padding: 10px;
 
 }
-
-
-
-
 /* Css on #category-dropdown */
 #category-dropdown-header{
     padding: 10px;
     border-radius: 30px;
     margin-left: 10px;
-   
- 
 }
 
 #category-dropdown-footer{
