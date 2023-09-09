@@ -1,0 +1,368 @@
+
+
+/* Reset some default styles */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+  margin: 0;
+ 
+
+}
+
+/* if error here was "padding: 0;" */
+
+.logo {
+  font-family: 'Sedgwick Ave Display', cursive;
+  font-size: 2.5rem;
+  line-height: 80px;
+  color: #141E46;
+  text-decoration: none;
+}
+
+
+p>i {
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.4rem;
+  color: #5C5470;
+
+}
+
+body {
+  font-family: Arial, sans-serif;
+
+}
+
+/* Header styles */
+header {
+  /* background-color: #f7f7f7; */
+  color: #3f3c3c;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Hero section styles */
+.hero {
+  background-image: url('/assetimgs/banner.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-align: center;
+  padding: 5rem 0;
+  width: 100%;
+  padding-top: 240px;
+  padding-bottom: 288px;
+}
+
+/* For mobile screens */
+@media (min-width: 300px) and (max-width:780px) {
+  .hero {
+    max-width: 100%;
+    /* Full width on mobile */
+    height: auto;
+    background-image: url('/assetimgs/banner2n2.jpg');
+    padding: 0 0 212px 0;
+
+  }
+}
+
+
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+/* Banner styles */
+.banner {
+  background-color: #f0f0f0;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Product gallery styles */
+.product-gallery {
+
+  gap: 1rem;
+
+ 
+  margin: 30px 20px 0 20px;
+
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* 2 columns for mobile */
+  gap: 20px;
+  /* Adjust the gap between products */
+}
+
+@media (min-width: 580px) {
+  .product-gallery {
+    grid-template-columns: repeat(3, 1fr);
+    /* 4 columns for desktop */
+  }
+}
+
+@media (min-width: 780px) {
+  .product-gallery {
+    grid-template-columns: repeat(4, 1fr);
+    /* 4 columns for desktop */
+  }
+}
+
+
+.product-card {
+
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+  border-radius: 8%;
+  display: grid;
+  
+  box-shadow:0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0,0,0,0.22);
+
+  border-bottom: none;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+box-shadow: 0 3px 6px  rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.product-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+/* Product popup styles */
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 9999;
+  align-items: center;
+  justify-content: center;
+}
+
+.popup-content {
+  max-width: 80%;
+  max-height: 80%;
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+  animation: pulse 1s;
+
+}
+
+
+.popup-content img {
+  max-width: 100%;
+  border-radius: 50%;
+
+}
+
+@keyframes pulse {
+
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+/* Media query for Close button on Pop-up */
+
+@media (min-width:426px) and (max-width:900px) {
+  span.close-popup {
+    position: absolute;
+
+    right: 17px;
+    display: inline-block;
+
+  }
+}
+
+@media (min-width:280px) and (max-width:425px) {
+  span.close-popup {
+    position: absolute;
+    top: 5px;
+    right: 32px;
+    display: inline-block;
+
+  }
+}
+
+
+
+.close-popup {
+  position: absolute;
+  top: 30px;
+  right: 35px;
+  color: #fff;
+  cursor: pointer;
+
+  display: inline-block;
+
+}
+
+/* Adjust popup content position */
+.popup-content {
+  position: relative;
+  border-radius: 20%;
+}
+
+
+
+@media screen and (min-width:900px) and (max-width:3000px) {
+
+  .popup-content {
+    position: relative;
+    max-width: 40%;
+    /* Adjust this value as needed */
+    max-height: 90vh;
+    /* Adjust this value as needed */
+    margin: 0 auto;
+
+  }
+
+}
+
+/* For every page */
+.product-gallery {
+  margin-bottom: 50px;
+}
+
+.footer {
+  width: 100%;
+  height: fit-content;
+  background-color: rgb(6, 12, 31);
+ text-align: left;
+  
+}
+
+
+
+#alogo {
+  color: rgb(194, 194, 183);
+  text-decoration: none;
+
+  font-family: 'Sedgwick Ave Display', cursive;
+  font-size: 2.5rem;
+  line-height: 80px;
+
+  text-decoration: none;
+  text-align: center;
+
+}
+
+.catname {
+  background-color: #1b254d;
+ 
+  height: fit-content;
+  color: rgb(175, 179, 182);
+
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+ margin-bottom: 20px;
+ padding: 10px;
+
+}
+
+
+
+
+/* Css on #category-dropdown */
+#category-dropdown-header{
+    padding: 10px;
+    border-radius: 30px;
+    margin-left: 10px;
+   
+ 
+}
+
+#category-dropdown-footer{
+    padding: 10px;
+    border-radius: 30px;
+   margin-left: 10px;
+    margin-top: 10px;
+}
+.footer-logo{
+    text-align: center;
+}
+h5{
+  
+    text-align: center;
+   
+    margin: 0;
+    padding-top: 10px;
+    text-align: center;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+  button{
+    text-align: center;
+    font-size: 15px;
+    color: #a3a2ad;
+    
+    padding: 5px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    margin-top: 5px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    background-color: #141E46;
+  } 
+  
+.categname{
+  text-align: center;
+ font-size: 0.8em;
+ color: #0F2C59;
+ font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* product gallery  padding: 20 50px 50px 20; */
+/* Designing product gallery cards */
+/* h3{
+  text-align: center;
+  font-size: 20px;
+  margin: 0;
+  padding-top: 10px;
+}
+ul{
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0%;
+}
+li{
+  padding-top:5px;
+}
+.checked{
+  color: rgb(11, 11, 102);
+}
+button{
+  text-align: center;
+  font-size: 15px;
+  color: #fff;
+  width: 100%;
+  padding: 5px;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  margin-top: 5px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+} */

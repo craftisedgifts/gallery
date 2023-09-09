@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stick Up</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Sedgwick+Ave+Display&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="/assetimgs/android-chrome-192x192.png  ">
+    <style>
+        .hero {
+            background-image: none;
+            padding: 0%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1><a class="logo" href="index.html">Stick Up</a></h1>
+        <p><i>Making Your Devices Stylishly Yours</i></p>
+
+    </header>
+
+    <section class="hero">
+
+    </section>
+    <!-- ------------------- -->
+    <div class="catname">Shop Potter head Skins and Covers</div>
+    <!-- --------------- -->
+    <!--  -->
+
+    <nav class="main-nav">
+        <div class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <select class="category-dropdown" id="category-dropdown-header">
+            <option value="#">Shop by Categories</option>
+            <option value="Aesthetic.html">Aesthetic</option>
+            <option value="anime.html">Anime</option>
+            <option value="bts.html">BTS</option>
+            <option value="camoflauge.html">Camoflauge</option>
+            <option value="Circuit.html">Circuit</option>
+            <option value="dc.html">DC</option>
+            <option value="Exclusive.html">Exclusive</option>
+            <option value="floral.html">Floral</option>
+            <option value="gaming.html">Gaming</option>
+            <option value="geometric.html">Geometric</option>
+            <option value="gow.html">God of War</option>
+            <option value="marble.html">Marble</option>
+            <option value="marvelart.html">Marvelart</option>
+            <option value="marveledition.html">Marvel Edition</option>
+            <option value="Moonknight.html">Moonknight</option>
+            <option value="potterhead.html">Potterhead</option>
+            <option value="premeuim.html">Premeuim</option>
+            <option value="Sports.html">Sports</option>
+            <option value="vintage.html">Vintage</option>
+
+            <!-- Add more category options as needed -->
+        </select>
+    </nav>
+
+
+
+    <!--  -->
+    <section class="product-gallery">
+        <div class="product-card" onclick="openPopup('/Categories/Potter head/The golden trio.jpg')">
+            <img src="/Categories/Potter head/The golden trio.jpg" alt="The Golden Trio">
+        </div>
+        <div class="product-card" onclick="openPopup('/Categories/Potter head/Griffindor.jpg')">
+            <img src="/Categories/Potter head/Griffindor.jpg" alt="Griffindor">
+        </div>
+        <div class="product-card" onclick="openPopup('/Categories/Potter head/Ravenclaw.jpg')">
+            <img src="/Categories/Potter head/Ravenclaw.jpg" alt="Ravenclaw">
+        </div>
+        <div class="product-card" onclick="openPopup('/Categories/Potter head/Tale of brothers.jpg')">
+            <img src="/Categories/Potter head/Tale of brothers.jpg" alt="Tale of Brothers">
+        </div>
+
+
+
+    </section>
+
+
+    <!-- Product Popup container -->
+
+    <div class="popup" id="productPopup">
+        <div class="popup-content">
+            <span class="close-popup" onclick="closePopup()">&times;</span>
+            <img src="" alt="" id="popupProduct">
+        </div>
+    </div>
+
+
+    <div class="footer">
+
+        <!-- Footer -->
+        <footer>
+            <!-- ...other footer content... -->
+            <nav class="footer-nav">
+                <div class="menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <select class="category-dropdown" id="category-dropdown-footer">
+                    <option value="#">Shop by Categories</option>
+                    <option value="Aesthetic.html">Aesthetic</option>
+                    <option value="anime.html">Anime</option>
+                    <option value="bts.html">BTS</option>
+                    <option value="camoflauge.html">Camoflauge</option>
+                    <option value="Circuit.html">Circuit</option>
+                    <option value="dc.html">DC</option>
+                    <option value="Exclusive.html">Exclusive</option>
+                    <option value="floral.html">Floral</option>
+                    <option value="gaming.html">Gaming</option>
+                    <option value="geometric.html">Geometric</option>
+                    <option value="gow.html">God of War</option>
+                    <option value="marble.html">Marble</option>
+                    <option value="marvelart.html">Marvelart</option>
+                    <option value="marveledition.html">Marvel Edition</option>
+                    <option value="Moonknight.html">Moonknight</option>
+                    <option value="potterhead.html">Potterhead</option>
+                    <option value="premeuim.html">Premeuim</option>
+                    <option value="Sports.html">Sports</option>
+                    <option value="vintage.html">Vintage</option>
+                    <!-- Add more category options as needed -->
+                </select>
+            </nav>
+        </footer>
+<!--  -->
+<div class="footer-logo">
+    <h1><a id="alogo" href="index.html" style="text-align: center;">Stick Up</a></h1>
+    <p style="color: rgb(105, 105, 105);">©2023 Stick Up. </p>
+
+    <div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
