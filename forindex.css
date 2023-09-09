@@ -46,7 +46,7 @@ header {
 
 /* Hero section styles */
 .hero {
-  background-image: url('/assetimgs/banner.jpg');
+  background-image: url('assetimgs/banner.jpg');
   background-size: cover;
   background-position: center;
   color: #fff;
@@ -63,7 +63,7 @@ header {
     max-width: 100%;
     /* Full width on mobile */
     height: auto;
-    background-image: url('/assetimgs/banner2n2.jpg');
+    background-image: url('assetimgs/banner2n2.jpg');
     padding: 0 0 212px 0;
 
   }
