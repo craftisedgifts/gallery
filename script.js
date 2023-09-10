@@ -28,6 +28,16 @@ const targetLink = button.getAttribute('data-link');
 window.location.href = targetLink;
 });
 });
-
+document.getElementById('whatsappButton').addEventListener('click', function() {
+    // Define your WhatsApp number and a message (customize as needed)
+    const whatsappNumber = '916265339647';
+    const message = 'Hello, I would like to place an order.';
+  
+    // Create the WhatsApp URL
+    const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+  
+    // Open WhatsApp in a new tab
+    window.open(whatsappURL);
+  });
 
 
