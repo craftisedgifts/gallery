@@ -1,4 +1,4 @@
-alert("To order Screenshot design and whatsapp +91-6265339647")
+
 // Function to open the product popup
 function openPopup(imageSrc, imageAlt) {   const popup = document.getElementById('productPopup');  const popupProduct = document.getElementById('popupProduct'); popupProduct.src = imageSrc; popupProduct.alt = imageAlt; popup.style.display = 'flex'; }
 // Function to close the product popup
