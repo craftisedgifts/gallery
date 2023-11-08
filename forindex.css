@@ -275,11 +275,13 @@ background-color: #141E46;
   padding: 10px;
 
  /* Use the vibrate animation */
- animation: vibrate 0.5s ease infinite; /* Adjust duration and timing as needed */
+ animation: vibrate 0.5s ease infinite;
+  /* Adjust duration and timing as needed */
 }
 #whatsappButton:hover {
   background-color: #128c7e; /* Darker WhatsApp green color on hover */
-}.tss{
+}
+.tss{
 color: #1b2d75;
 }
 
