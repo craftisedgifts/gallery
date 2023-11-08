@@ -270,8 +270,7 @@ font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   border-radius: 50px;
   cursor: pointer;
   padding: 10px;
- /* Use the vibrate animation */
- animation: vibrate 1s ease infinite; /* Adjust duration and timing as needed */
+ animation: vibrate 1s ease infinite; 
 }
 #whatsappButton:hover {
   background-color: #128c7e; /* Darker WhatsApp green color on hover */
