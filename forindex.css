@@ -260,6 +260,30 @@ border-bottom-right-radius: 15px;
 border-bottom-left-radius: 15px;
 background-color: #141E46;
   } 
+
+/*  */
+#whatsappButton {
+ 
+  margin-right: 10px;
+  background-color: #25d366; /* WhatsApp green color */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 50px;
+  cursor: pointer;
+
+  padding: 10px;
+
+ /* Use the vibrate animation */
+ animation: vibrate 0.5s ease infinite; /* Adjust duration and timing as needed */
+}
+#whatsappButton:hover {
+  background-color: #128c7e; /* Darker WhatsApp green color on hover */
+}.tss{
+color: #1b2d75;
+}
+
+/*  */
 .categname{
 text-align: center;
 font-size: 0.8em;
