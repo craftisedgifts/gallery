@@ -368,14 +368,14 @@ font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 /* Other styles */
 
-.disc-popup{
+/* .disc-popup{
  
   border: 5px solid transparent;
   width: 80%;
   height: 20vw;
   margin: 200px 100px;
   border-radius: 10px;
-}
+} */
 .popup-cont{
   display: flex;
   flex-direction: column;
