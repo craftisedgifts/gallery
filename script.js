@@ -77,7 +77,7 @@ document.getElementById('whatsappButton').addEventListener('click', function() {
         if (interval) clearInterval(interval); // Clear the previous interval
         interval = setInterval(() => {
           showNextBanner('.banner');
-        }, 6000);
+        }, 3000);
       }
     }
   
