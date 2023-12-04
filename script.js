@@ -87,39 +87,11 @@ document.getElementById('whatsappButton').addEventListener('click', function() {
     // Adjust slideshow on window resize
     window.addEventListener('resize', setBannerClass);
   });
-  
-  document.addEventListener('DOMContentLoaded', function () {
-    const discountPopup = document.getElementById('discountPopup');
-  
-    function openPopup() {
-      discountPopup.style.display = 'block';
-    }
-  
-    function closePopup() {
-      discountPopup.style.display = 'none';
-      // Store a flag in local storage indicating that the popup has been shown
-      localStorage.setItem('popupShown', 'true');
-    }
-  
-    // Check if the popup has been shown before
-    const popupShown = localStorage.getItem('popupShown');
-  
-    if (!popupShown) {
-      openPopup();
-    }
-  
-   // Function to close the discount popup
-function closeDiscountPopup() {
-    const discountPopup = document.getElementById('discountPopupC');
-    discountPopup.style.display = 'none';
-}
 
-// Function to close the black box popup
 function closeBlackBoxPopup() {
-    const blackBoxPopup = document.getElementById('blackBoxC');
-    blackBoxPopup.style.display = 'none';
-}
-  });
+const blackBoxPopup = document.getElementById('blackBoxPopup');
+blackBoxPopup.style.display = 'none';
+};  
 
   
   
