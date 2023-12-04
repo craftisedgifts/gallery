@@ -39,5 +39,85 @@ document.getElementById('whatsappButton').addEventListener('click', function() {
     // Open WhatsApp in a new tab
     window.open(whatsappURL);
   });
+  document.addEventListener('DOMContentLoaded', function () {
+    let currentBannerIndex = 0;
+    let banners;
+    let totalBanners;
+    let interval;
+  
+    function displayBanner(index, className) {
+      const bannerEls = document.querySelectorAll(className);
+      bannerEls.forEach((banner, i) => {
+        if (i === index) {
+          banner.classList.add('active');
+        } else {
+          banner.classList.remove('active');
+        }
+      });
+    }
+  
+    function showNextBanner(className) {
+      currentBannerIndex = (currentBannerIndex + 1) % totalBanners;
+      displayBanner(currentBannerIndex, className);
+    }
+  
+    function setBannerClass() {
+      if (window.innerWidth <= 620) {
+        banners = document.querySelectorAll('.banner-mobile');
+        totalBanners = banners.length;
+        displayBanner(0, '.banner-mobile');
+        if (interval) clearInterval(interval); // Clear the previous interval
+        interval = setInterval(() => {
+          showNextBanner('.banner-mobile');
+        }, 6000);
+      } else {
+        banners = document.querySelectorAll('.banner');
+        totalBanners = banners.length;
+        displayBanner(0, '.banner');
+        if (interval) clearInterval(interval); // Clear the previous interval
+        interval = setInterval(() => {
+          showNextBanner('.banner');
+        }, 6000);
+      }
+    }
+  
+    // Set initial banner based on screen size
+    setBannerClass();
+  
+    // Adjust slideshow on window resize
+    window.addEventListener('resize', setBannerClass);
+  });
+  
+  document.addEventListener('DOMContentLoaded', function () {
+    const discountPopup = document.getElementById('discountPopup');
+  
+    function openPopup() {
+      discountPopup.style.display = 'block';
+    }
+  
+    function closePopup() {
+      discountPopup.style.display = 'none';
+      // Store a flag in local storage indicating that the popup has been shown
+      localStorage.setItem('popupShown', 'true');
+    }
+  
+    // Check if the popup has been shown before
+    const popupShown = localStorage.getItem('popupShown');
+  
+    if (!popupShown) {
+      openPopup();
+    }
+  
+    // Add event listener to close the popup
+    const closePopupButton = document.querySelector('.close-popup');
+    if (closePopupButton) {
+      closePopupButton.addEventListener('click', closePopup);
+    }
+  });
 
-
+  function closePopup() {
+    const blackBox = document.getElementById('blackBox');
+    blackBox.style.display = 'none';
+  }
+  
+  
