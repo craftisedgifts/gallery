@@ -1,30 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Stick Up</title>
-<link rel="stylesheet" href="forindex.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Sedgwick+Ave+Display&display=swap"
-rel="stylesheet">
-<link rel="icon" href="assetimgs/android-chrome-192x192.png  ">
-<style></style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stick Up</title>
+  <link rel="stylesheet" href="forindex.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Sedgwick+Ave+Display&display=swap"
+    rel="stylesheet">
+  <link rel="icon" href="assetimgs/android-chrome-192x192.png">
+  <style></style>
 </head>
 <body>
-<header>
-<h1><a class="logo" href="index.html">Stick Up</a></h1>
-<p><i>Making Your Devices Stylishly Yours</i></p>
-</header>
-<section class="hero"></section>
-<nav class="main-nav" style="display: inline;">
-<div class="menu-toggle"><span></span><span></span><span></span></div><select class="category-dropdown"
-id="category-dropdown-header">
-<option value="catname">Shop by Categories</option> 
+  <div class="black-box" id="blackBox">
+    <span class="close-popup" onclick="closePopup()">X</span>
+    <div class="content-slider">
+      <div class="slide">
+        <i class="fas fa-tags"></i>
+        <p id="discountText">Get <span class="rupees">10% off</span> on your first purchase.</p>
+      </div>
+      <div class="slide">
+        <i class="fas fa-truck"></i>
+        <p id="shippingText">Free shipping on orders Above<span class="rupees"> ₹399 </span>. <span class="warn">Limited
+            time offer! <img src="assetimgs/delivery-truck-2.png" width="30px" alt=""></span></p>
+      </div>
+    </div>
+  </div>
+  <header>
+    <h1><a href="index.html"><img src="assetimgs/Untitled_design-removebg-preview.png" alt="" class="logo"></a></h1>
+    <p><i>Making Your Devices Stylishly Yours</i></p>
+  </header>
+  <section class="hero">
+    <div class="banner-slideshow">
+      <img class="banner active" src="assetimgs/png/banner-1 new.png" alt="Banner 1">
+      <img class="banner " src="assetimgs/png/banner 2-new.png" alt="Banner 2">
+      <img class="banner " src="assetimgs/png/banner 3-new.png" alt="Banner 3">
+      <img class="banner " src="assetimgs/png/banner 4-new.png" alt="Banner 3">
+      <!-- Add more banner images here -->
+      <!-- banner for smaller screen size -->
+      <img class="banner-mobile  active                    " src="assetimgs/png/banner 1 mobile.png"
+        alt="Small Banner 1">
+      <img class="banner-mobile " src="assetimgs/png/banner 2 mobile.png" alt="Small Banner 2">
+      <img class="banner-mobile " src="assetimgs/png/banner 3 mobile.png" alt="Small Banner 3">
+      <img class="banner-mobile " src="assetimgs/png/banner 4 mobile.png" alt="Small Banner 4">
+    </div>
+  </section>
+  <section class="features">
+    <div class="feature">
+      <img src="assetimgs/delivery-truck.png" alt="Free Delivery">
+      <h3>Free Delivery</h3>
+    </div>
+    <div class="feature">
+      <img src="assetimgs/quality icon.png" alt="Best Quality">
+      <h3>Best Quality</h3>
+    </div>
+    <div class="feature">
+      <img src="assetimgs/presice fit icon.png" alt="Precise Fit">
+      <h3>Precise Fit</h3>
+    </div>
+  </section>
+  <div class="popup disc-popup" id="discountPopup">
+    <div class="popup-content popup-cont">
+      <span class="close-popup close-pop" onclick="closePopup()">close</span>
+      <h2 class="yellow">Special Discount!!</h2>
+      <p>Free delivery on orders above <span class="rupees">₹399</span></p>
+      <p>Get upto <span class="rupees">10% off</span> on your first purchase.</p>
+    </div>
+  </div>
+  <nav class="main-nav" style="display: inline;">
+    <div class="menu-toggle"><span></span><span></span><span></span></div><select class="category-dropdown"
+      id="category-dropdown-header">
+      <option value="catname">Shop by Categories</option>
 <option value="aesthetic.html">Aesthetic</option>
 <option value="anime.html">Anime</option>
-<option value="cartoon.html">Cartoon Series</option> 
+<option value="cartoon.html">Cartoon Series</option>
 <option value="camoflauge.html">Camoflauge</option>
 <option value="custom.html">Custom Name</option>
 <option value="dc.html">DC</option>
@@ -50,88 +100,87 @@ alt="Custom name Skins card"></a>
 <a href="premeuim.html"><img src="Categories/Premium/Lv.jpg" alt="Premium Skins card"></a>
 <div class="categname">
 <p>Shop Premium Skins and Covers</p>
-</div>
-<button card-button> Shop Now</button>
-</div>
-<div class="product-card" data-link="exclusive.html">
-<a href="exclusive.html"><img src="Categories/Exclusive/Shelby.jpg" alt="Anime Skins"></a>
-<div class="categname">
-<p>Shop Exclusive Skins and Covers</p>
-</div>
-<button card-button>Shop Now</button>
-</div>
-<div class="product-card" data-link="aesthetic.html">
-<a href="aesthetic.html"><img src="Aesthetic series/Retro heart.jpg" alt="#"></a>
-<div class="categname">
-<p>Aesthetic Skins and Covers</p>
-</div>
-<button card-button>Shop Now</button>
-</div>
-<div class="product-card" data-link="geometric.html">
-<a href="geometric.html"><img src="Categories/Geometric Series/Golden cubes.jpg" alt="#"></a>
-<div class="categname">
-<p>Geometric Series Skins and Covers</p>
-            </div>
-            <button card-button>Shop Now</button>
-        </div>
-        <div class="product-card" data-link="sports.html">
-            <a href="sports.html"><img src="Categories/Sports/King kholi.jpg" alt="Sports card"></a>
-            <div class="categname">
-                <p>Sports Skins and Covers</p>
-            </div>
-            <button card-button>Shop Now</button>
-        </div>
-        <div class="product-card" data-link="anime.html">
-<a href="anime.html"><img src="Categories/Anime/Anime 05.jpg" alt="Marvel art"></a>
-<div class="categname">
-<p>Anime Skins and Covers</p>
-</div>
-<button card-button>Shop Now</button>
-</div>
-<div class="product-card" data-link="floral.html">
-<a href="floral.html"><img src="Categories/Floral/Colourful Floral.jpg" alt="Marvel Edition"></a>
-<div class="categname">
-<p> Floral Skins and Covers</p>
-</div>
-<button card-button>Shop Now</button>
-</div>
-<div class="product-card" data-link="marble.html">
-<a href="marble.html"><img src="Categories/Marble/Black gold marble.jpg" alt="#"></a>
-<div class="categname">
-<p>Marble skins and Covers</p>
-</div>
-<button card-button>Shop Now</button>
-</div>
-<div class="product-card" data-link="marvelart.html">
-<a href="marvelart.html"><img src="Categories/Marvel art/Black panther ART.jpg" alt="Marvel art card"></a>
-<div class="categname">
-<p>Marvel Art and Covers</p>
-</div>
-<button card-button>Shop Now</button>
-</div>
-<div class="product-card" data-link="marveledition.html">
-<a href="marveledition.html"><img src="Categories/Marvel edition/Captain A.jpg"
-alt="Marvel editioin card"></a>
-<div class="categname">
-<p>Marvel Edition Skins and Covers</p>
-</div>
-<button card-button>Shop Now</button>
-</div>
-<div class="product-card" data-link="circuit.html">
-<a href="circuit.html"><img src="Categories/circuit/purple circuit.jpg" alt="#"></a>
-<div class="categname">
-<p>Circuit Skins and Covers</p>
-</div>
-<button card-button>Shop Now</button>
-</div>
-<div class="product-card" data-link="bts.html">
-<a href="bts.html"><img src="Categories/Bts/BTS 01.jpg" alt="Bts card"></a>
-<div class="categname">
-<p>BTS Skins and Covers</p>
-</div>
-<button card-button>Shop Now</button>
-</div>
-<div class="product-card" data-link="camoflauge.html">
+      </div>
+      <button card-button> Shop Now</button>
+    </div>
+    <div class="product-card" data-link="exclusive.html">
+      <a href="exclusive.html"><img src="Categories/Exclusive/Shelby.jpg" alt="Anime Skins"></a>
+      <div class="categname">
+        <p>Shop Exclusive Skins and Covers</p>
+      </div>
+      <button card-button>Shop Now</button>
+    </div>
+    <div class="product-card" data-link="aesthetic.html">
+      <a href="aesthetic.html"><img src="Aesthetic series/Retro heart.jpg" alt="#"></a>
+      <div class="categname">
+        <p>Aesthetic Skins and Covers</p>
+      </div>
+      <button card-button>Shop Now</button>
+    </div>
+    <div class="product-card" data-link="geometric.html">
+      <a href="geometric.html"><img src="Categories/Geometric Series/Golden cubes.jpg" alt="#"></a>
+      <div class="categname">
+        <p>Geometric Series Skins and Covers</p>
+      </div>
+      <button card-button>Shop Now</button>
+    </div>
+    <div class="product-card" data-link="sports.html">
+      <a href="sports.html"><img src="Categories/Sports/King kholi.jpg" alt="Sports card"></a>
+      <div class="categname">
+        <p>Sports Skins and Covers</p>
+      </div>
+      <button card-button>Shop Now</button>
+    </div>
+    <div class="product-card" data-link="anime.html">
+      <a href="anime.html"><img src="Categories/Anime/Anime 05.jpg" alt="Marvel art"></a>
+      <div class="categname">
+        <p>Anime Skins and Covers</p>
+      </div>
+      <button card-button>Shop Now</button>
+    </div>
+    <div class="product-card" data-link="floral.html">
+      <a href="floral.html"><img src="Categories/Floral/Colourful Floral.jpg" alt="Marvel Edition"></a>
+      <div class="categname">
+        <p> Floral Skins and Covers</p>
+      </div>
+      <button card-button>Shop Now</button>
+    </div>
+    <div class="product-card" data-link="marble.html">
+      <a href="marble.html"><img src="Categories/Marble/Black gold marble.jpg" alt="#"></a>
+      <div class="categname">
+        <p>Marble skins and Covers</p>
+      </div>
+      <button card-button>Shop Now</button>
+    </div>
+    <div class="product-card" data-link="marvelart.html">
+      <a href="marvelart.html"><img src="Categories/Marvel art/Black panther ART.jpg" alt="Marvel art card"></a>
+      <div class="categname">
+        <p>Marvel Art and Covers</p>
+      </div>
+      <button card-button>Shop Now</button>
+    </div>
+    <div class="product-card" data-link="marveledition.html">
+      <a href="marveledition.html"><img src="Categories/Marvel edition/Captain A.jpg" alt="Marvel editioin card"></a>
+      <div class="categname">
+        <p>Marvel Edition Skins and Covers</p>
+      </div>
+      <button card-button>Shop Now</button>
+    </div>
+    <div class="product-card" data-link="circuit.html">
+      <a href="circuit.html"><img src="Categories/circuit/purple circuit.jpg" alt="#"></a>
+      <div class="categname">
+        <p>Circuit Skins and Covers</p>
+      </div>
+      <button card-button>Shop Now</button>
+    </div>
+    <div class="product-card" data-link="bts.html">
+      <a href="bts.html"><img src="Categories/Bts/BTS 01.jpg" alt="Bts card"></a>
+      <div class="categname">
+        <p>BTS Skins and Covers</p>
+      </div>
+      <button card-button>Shop Now</button>
+    </div>
+    <div class="product-card" data-link="camoflauge.html">
 <a href="camoflauge.html"><img src="Categories/Camoflauge/Military Honeycomb.jpg" alt="Camof Card"></a>
 <div class="categname">
 <p>Camoflauge Skins and Covers</p>
@@ -182,10 +231,10 @@ id="popupProduct"></div>
 <nav class="footer-nav">
 <div class="menu-toggle"><span></span><span></span><span></span></div><select class="category-dropdown"
 id="category-dropdown-footer">
-<option value="catname">Shop by Categories</option> 
+<option value="catname">Shop by Categories</option>
 <option value="aesthetic.html">Aesthetic</option>
 <option value="anime.html">Cartoon Series</option>
-<option value="cartoon.html">Anime</option> 
+<option value="cartoon.html">Anime</option>
 <option value="camoflauge.html">Camoflauge</option>
 <option value="custom.html">Custom Name</option>
 <option value="dc.html">DC</option>
