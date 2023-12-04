@@ -110,13 +110,13 @@ document.getElementById('whatsappButton').addEventListener('click', function() {
   
    // Function to close the discount popup
 function closeDiscountPopup() {
-    const discountPopup = document.getElementById('discountPopup');
+    const discountPopup = document.getElementById('discountPopupC');
     discountPopup.style.display = 'none';
 }
 
 // Function to close the black box popup
 function closeBlackBoxPopup() {
-    const blackBoxPopup = document.getElementById('blackBoxPopup');
+    const blackBoxPopup = document.getElementById('blackBoxC');
     blackBoxPopup.style.display = 'none';
 }
 
