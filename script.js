@@ -119,6 +119,7 @@ function closeBlackBoxPopup() {
     const blackBoxPopup = document.getElementById('blackBoxC');
     blackBoxPopup.style.display = 'none';
 }
+  });
 
   
   
