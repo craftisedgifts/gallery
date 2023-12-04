@@ -108,16 +108,17 @@ document.getElementById('whatsappButton').addEventListener('click', function() {
       openPopup();
     }
   
-    // Add event listener to close the popup
-    const closePopupButton = document.querySelector('.close-popup');
-    if (closePopupButton) {
-      closePopupButton.addEventListener('click', closePopup);
-    }
-  });
+   // Function to close the discount popup
+function closeDiscountPopup() {
+    const discountPopup = document.getElementById('discountPopup');
+    discountPopup.style.display = 'none';
+}
 
-  function closePopup() {
-    const blackBox = document.getElementById('blackBox');
-    blackBox.style.display = 'none';
-  }
+// Function to close the black box popup
+function closeBlackBoxPopup() {
+    const blackBoxPopup = document.getElementById('blackBoxPopup');
+    blackBoxPopup.style.display = 'none';
+}
+
   
   
