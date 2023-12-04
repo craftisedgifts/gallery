@@ -7,25 +7,21 @@ ul,
 li {
   margin: 0;
 }
-/* if error here was "padding: 0;" */
-.logo {
-  font-family: 'Sedgwick Ave Display', cursive;
-  font-size: 2.5rem;
-  line-height: 80px;
-  color: #141E46;
-  text-decoration: none;
+.logo{
+  width: 250px;
 }
-
+@media (min-width: 300px) and (max-width:780px) {
+  .logo {
+    width: 150px;
+  }
+}
 p>i {
   font-family: 'Dancing Script', cursive;
   font-size: 1.4rem;
   color: #5C5470;
-
 }
-
 body {
   font-family: Arial, sans-serif;
-
 }
 
 /* Header styles */
@@ -35,27 +31,12 @@ header {
   text-align: center;
   padding: 10px;
 }
-
-/* Hero section styles */
-.hero {
-  background-image: url('assetimgs/banner.jpg');
-  background-size: cover;
-  background-position: center;
-  color: #fff;
-  text-align: center;
-  padding: 5rem 0;
-  width: 100%;
-  padding-top: 240px;
-  padding-bottom: 288px;
-}
-
 /* For mobile screens */
 @media (min-width: 300px) and (max-width:780px) {
   .hero {
     max-width: 100%;
     /* Full width on mobile */
-    height: auto;
-    background-image: url('assetimgs/banner2n2.jpg');
+    height:30px;
     padding: 0 0 212px 0;
 
   }
@@ -63,13 +44,6 @@ header {
 .hero h1 {
   font-size: 3rem;
   margin-bottom: 1rem;
-}
-
-/* Banner styles */
-.banner {
-  background-color: #f0f0f0;
-  text-align: center;
-  padding: 1rem;
 }
 
 /* Product gallery styles */
@@ -276,7 +250,213 @@ font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   background-color: #128c7e; /* Darker WhatsApp green color on hover */
 }
 
+/* banner slide show */
 
+.banner-slideshow {
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+}
 
+ .banner {
+  display: none;
+  width: 100%;
+  height: auto;
+}
 
+.banner.active {
+  display: block;
+  animation: fade 1.5s ease-in-out;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+  
+}
+.features {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 40px 0;
+}
+
+.feature {
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.feature img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+.feature h3 {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+/* Add animation on hover */
+.feature:hover {
+  transform: scale(1.08);
+}
+@media screen and (max-width: 620px) {
+  .features {
+    flex-wrap: wrap;
+  }
+
+  .feature {
+    flex-basis: 45%; /* Adjust width for smaller screens */
+  }
+}
+
+/* Your other styles */
+
+/* Hide the small banners by default */
+.banner-mobile {
+  display: none;
+}
+/* Media query for mobile screens */
+@media (max-width: 620px) {
+  /* Hide the large banners on smaller screens */
+  .banner {
+    display: none !important;
+  }
+  
+  /* Display the small banners */
+  .banner-mobile {
+    display: block;
+    width: 100%;
+    /* Add any other necessary styles for mobile banners */
+  }
+  .banner-slideshow {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+  }
+  
+   .banner-mobile {
+    display: none;
+    width: 100%;
+    height: auto;
+  }
+  
+  .banner-mobile.active {
+    display: block;
+    animation: fade 1.5s ease-in-out;
+  }
+  
+  @keyframes fade {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+    
+  }
+  
+}
+.popup {
+  display: none;
+  /* Other styles for the popup */
+}
+/* Other styles */
+
+.disc-popup{
+ 
+  border: 5px solid transparent;
+  width: 80%;
+  height: 20vw;
+  margin: 200px 100px;
+  border-radius: 10px;
+}
+.popup-cont{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+ padding:70px;
+ color: white;
+ line-height: 50px;
+ font-size: 1.6vw;
+}
+.yellow{
+  color: #AB925F;
+}
+
+.close-pop{
+  font-size: 1.5vw;
+}
+@media screen and (max-width: 620px) {
+  .disc-popup {
+    width: 80%;
+    height: 60vw;
+    margin: 200px 30px;
+  }
+  .popup-cont{
+    
+   padding:15%;
+   color: white;
+   line-height: 25px;
+   font-size:4vw;
+  }
+  .close-pop{
+    font-size: 3.5vw;
+  }
+}
+.rupees{
+  color: #ffc95e80;
+  font-weight: 700;
+}
+/* Black box styles */
+.black-box {
+  position: relative;
+  background-color: black;
+  color: white;
+  width: 100%;
+  opacity: 0.7;
+  word-spacing: 5px;
+}
+
+.close-popup {
+  position: absolute;
+  top: 10px;
+  right: 30px;
+  cursor: pointer;
+  color: yellow;
+}
+
+.content-slider {
+  overflow: hidden;
+  display: flex;
+  gap: 70px;
+  justify-content: center;
+}
+.slide {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  padding: 10px;
+}
+.slide p {
+  margin-left: 10px;
+  animation: slideText 10s linear infinite;
+  width: 100%;
+  /* Adjust other styles as needed */
+}
+
+/* Animation */
+@keyframes slideText {
+  0% {
+  transform: translateX(-100%);
+  }
+  100% {
+      transform: translateX(100%);
+  }
+}
 
