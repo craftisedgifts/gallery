@@ -114,7 +114,7 @@ box-shadow:0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0,0,0,0.22);
 .product-card img {
   max-width: 100%;
   height: auto;
-  border-radius: 30px;
+  border-radius: 52px;
 }
 /* Product popup styles */
 .popup {
