@@ -1,4 +1,3 @@
-
 /* Reset some default styles */
 body,
 h1,
@@ -98,13 +97,11 @@ gap: 20px;
 
 
 .product-card {
-
   cursor: pointer;
   transition: transform 0.3s ease-in-out;
   border-radius: 50%;
   display: grid;
 box-shadow:0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0,0,0,0.22);
-
 }
 
 .product-card:hover {
@@ -136,9 +133,12 @@ box-shadow:0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0,0,0,0.22);
   overflow: hidden;
   text-align: center;
   position: relative;
-  animation: pulse 1s;
-
+  animation: pulse 2s;
+background-color: white;
+padding: 10px;
 }
+
+
 .popup-content img {
   max-width: 100%;
   border-radius: 50%;
@@ -211,7 +211,7 @@ font-size: 40px;
 .footer {
   width: 100%;
   height: fit-content;
-  background-color:whitesmoke;
+  background-color: rgb(6, 12, 31);
  text-align: left;
   
 }
@@ -226,18 +226,26 @@ font-size: 40px;
   text-align: center;
 
 }
+
 .catname {
   border: 2px solid #ceb88b;
  border-radius: 8px;
   height: fit-content;
   color: #423b3b;
-width: 80%;
+width: fit-content ;
   font-family: 'Courier New', Courier, monospace;
   text-align: center;
  margin:  20px auto ;
  padding: 10px;
 
 }
+@media (min-width:120px) and (max-width:420px) {
+  .catname{
+    width: 80%;
+  }
+}
+
+
 /* Css on #category-dropdown */
 #category-dropdown-header{
     padding: 10px;
@@ -297,6 +305,4 @@ width: 80%;
 }
 #whatsappButton:hover {
   background-color: #128c7e; /* Darker WhatsApp green color on hover */
-}.tss{
-color: #1b2d75;
 }
