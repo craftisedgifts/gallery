@@ -97,13 +97,11 @@ gap: 20px;
 
 
 .product-card {
-
   cursor: pointer;
   transition: transform 0.3s ease-in-out;
   border-radius: 50%;
   display: grid;
 box-shadow:0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0,0,0,0.22);
-
 }
 
 .product-card:hover {
@@ -233,7 +231,7 @@ font-size: 40px;
  border-radius: 8px;
   height: fit-content;
   color: #423b3b;
-width: max-content;
+width: 80%;
   font-family: 'Courier New', Courier, monospace;
   text-align: center;
  margin:  20px auto ;
