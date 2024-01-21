@@ -226,18 +226,20 @@ font-size: 40px;
 
 }
 
-.catname {
-  border: 2px solid #ceb88b;
- border-radius: 8px;
-  height: fit-content;
-  color: #423b3b;
-width: 80%;
-  font-family: 'Courier New', Courier, monospace;
-  text-align: center;
- margin:  20px auto ;
- padding: 10px;
 
+.catname {
+border: 2px solid #ceb88b;
+border-radius: 8px;
+height: fit-content;
+color: #423b3b;
+width: 80% !important;
+font-family: 'Courier New', Courier, monospace;
+text-align: center;
+margin:  20px auto ;
+padding: 10px;
 }
+
+
 /* Css on #category-dropdown */
 #category-dropdown-header{
     padding: 10px;
