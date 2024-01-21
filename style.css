@@ -159,7 +159,7 @@ transform: scale(1);
 @media (min-width:426px) and (max-width:900px) {
   span.close-popup {
     position: absolute;
-
+color:grey;
     right: 17px;
     display: inline-block;
 
@@ -172,7 +172,7 @@ transform: scale(1);
     top: 5px;
     right: 32px;
     display: inline-block;
-
+color:grey;
   }
 }
 .close-popup {
@@ -183,7 +183,7 @@ transform: scale(1);
   cursor: pointer;
 font-size: 40px;
   display: inline-block;
-
+color:grey;
 }
 /* Adjust popup content position */
 .popup-content {
