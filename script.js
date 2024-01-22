@@ -94,9 +94,6 @@ function closeBlackBoxPopup() {
   const blackBoxPopup = document.getElementById('blackBoxPopup');
   blackBoxPopup.style.display = 'none';
 };
-
-
-
 // Function to open the product popup
 function openPopup(imageSrc, productName, productDescription, productPrice) {
   const popup = document.getElementById('productPopup');
@@ -127,7 +124,8 @@ function buyNow() {
   const whatsappNumber = '916265339647'; // Replace with your owner's WhatsApp number
 
   // Create the WhatsApp message
-const message = `Hello, I would like to buy\n\nProduct Image: ${document.getElementById('popupProduct').src}`;
+  const message = `Hello, I would like to buy\nProduct Image: ${document.getElementById('popupProduct').src}`;
+  
 
   // Create the WhatsApp URL with the message
   const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
@@ -138,9 +136,6 @@ const message = `Hello, I would like to buy\n\nProduct Image: ${document.getElem
   // Close the popup after clicking "Buy Now"
   closePopup();
 }
-
-
-
 // **
 
 // // Function to open the product popup
@@ -236,8 +231,4 @@ const message = `Hello, I would like to buy\n\nProduct Image: ${document.getElem
 // const blackBoxPopup = document.getElementById('blackBoxPopup');
 // blackBoxPopup.style.display = 'none';
 // };  
-
-  
-  
-
 // **
