@@ -9,14 +9,17 @@ li {
   margin: 0;
   padding: 0;
 }
-.logo{
+
+.logo {
   width: 250px;
 }
+
 @media (min-width: 300px) and (max-width:780px) {
   .logo {
     width: 150px;
   }
 }
+
 p>i {
   font-family: 'Dancing Script', cursive;
   font-size: 1.4rem;
@@ -61,25 +64,28 @@ header {
 
   }
 }
+
 .hero h1 {
   font-size: 3rem;
   margin-bottom: 1rem;
 }
+
 /* Banner styles */
 .banner {
   background-color: #f0f0f0;
   text-align: center;
   padding: 1rem;
 }
+
 /* Product gallery styles */
 .product-gallery {
-gap: 1rem;
-margin: 30px 20px 0 20px;
-display: grid;
-grid-template-columns: repeat(2, 1fr);
-/* 2 columns for mobile */
-gap: 20px;
-/* Adjust the gap between products */
+  gap: 1rem;
+  margin: 30px 20px 0 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* 2 columns for mobile */
+  gap: 20px;
+  /* Adjust the gap between products */
 }
 
 @media (min-width: 580px) {
@@ -88,6 +94,7 @@ gap: 20px;
     /* 4 columns for desktop */
   }
 }
+
 @media (min-width: 780px) {
   .product-gallery {
     grid-template-columns: repeat(4, 1fr);
@@ -101,18 +108,20 @@ gap: 20px;
   transition: transform 0.3s ease-in-out;
   border-radius: 50%;
   display: grid;
-box-shadow:0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0,0,0,0.22);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
 .product-card:hover {
   transform: scale(1.05);
-  
+
 }
+
 .product-card img {
   max-width: 100%;
   height: auto;
   border-radius: 30px;
 }
+
 /* Product popup styles */
 .popup {
   display: none;
@@ -134,8 +143,8 @@ box-shadow:0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0,0,0,0.22);
   text-align: center;
   position: relative;
   animation: pulse 2s;
-background-color: white;
-padding: 10px;
+  background-color: white;
+  padding: 10px;
 }
 
 
@@ -143,10 +152,12 @@ padding: 10px;
   max-width: 100%;
   border-radius: 50%;
 }
+
 @keyframes pulse {
- 0%,
-100% {
-transform: scale(1);
+
+  0%,
+  100% {
+    transform: scale(1);
   }
 
   50% {
@@ -159,6 +170,7 @@ transform: scale(1);
 @media (min-width:426px) and (max-width:900px) {
   span.close-popup {
     position: absolute;
+
     right: 17px;
     display: inline-block;
 
@@ -171,36 +183,40 @@ transform: scale(1);
     top: 5px;
     right: 32px;
     display: inline-block;
+
   }
 }
+
 .close-popup {
   position: absolute;
   top: 30px;
   right: 35px;
   color: grey;
   cursor: pointer;
-font-size: 40px;
+  font-size: 40px;
   display: inline-block;
-color:grey;
+
 }
+
 /* Adjust popup content position */
 .popup-content {
   position: relative;
   border-radius: 20%;
+  /* display: flex; */
 }
+
 @media screen and (min-width:900px) and (max-width:3000px) {
 
   .popup-content {
     position: relative;
     max-width: 40%;
-    /* Adjust this value as needed */
     max-height: 90vh;
-    /* Adjust this value as needed */
     margin: 0 auto;
 
   }
 
 }
+
 /* For every page */
 .product-gallery {
   margin-bottom: 50px;
@@ -209,13 +225,14 @@ color:grey;
 .footer {
   width: 100%;
   height: fit-content;
- text-align: left;
-  
+  text-align: left;
+
 }
+
 #alogo {
   color: rgb(194, 194, 183);
   text-decoration: none;
- font-family: 'Sedgwick Ave Display', cursive;
+  font-family: 'Sedgwick Ave Display', cursive;
   font-size: 2.5rem;
   line-height: 80px;
 
@@ -226,44 +243,67 @@ color:grey;
 
 .catname {
   border: 2px solid #ceb88b;
- border-radius: 8px;
+  border-radius: 8px;
   height: fit-content;
   color: #423b3b;
-width: fit-content ;
+  width: fit-content;
   font-family: 'Courier New', Courier, monospace;
   text-align: center;
- margin:  20px auto ;
- padding: 10px;
+  margin: 20px auto;
+  padding: 10px;
 
 }
+
 @media (min-width:120px) and (max-width:420px) {
-  .catname{
+  .catname {
     width: 80%;
   }
 }
+
+
 /* Css on #category-dropdown */
-#category-dropdown-header{
-    padding: 10px;
-    border-radius: 30px;
-    margin-left: 10px;
+#category-dropdown-header {
+  padding: 10px;
+  border-radius: 30px;
+  margin-left: 10px;
 }
-#category-dropdown-footer{
-    padding: 10px;
-    border-radius: 30px;
-   margin-left: 10px;
-    margin-top: 10px;
+
+#category-dropdown-footer {
+  padding: 10px;
+  border-radius: 30px;
+  margin-left: 10px;
+  margin-top: 10px;
 }
-.footer-logo{
-    text-align: center;
+
+.footer-logo {
+  text-align: center;
 }
+
 /* Add a new CSS keyframes animation */
 @keyframes vibrate {
-  10% { transform: translateX(0); }
-  30% { transform: translateX(-2px); }
-  40% { transform: translateX(2px); }
-  60% { transform: translateX(-2px); }
-  80% { transform: translateX(2px); }
-  100% { transform: translateX(0); }
+  10% {
+    transform: translateX(0);
+  }
+
+  30% {
+    transform: translateX(-2px);
+  }
+
+  40% {
+    transform: translateX(2px);
+  }
+
+  60% {
+    transform: translateX(-2px);
+  }
+
+  80% {
+    transform: translateX(2px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
 }
 
 .order-instructions {
@@ -274,30 +314,53 @@ width: fit-content ;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   font-family: cursive;
 }
+
 .order-instructions h2 {
   font-size: 18px;
   margin-bottom: 10px;
 }
+
 .order-instructions ol {
   margin-left: 20px;
   padding-left: 0;
 }
+
 .order-instructions li {
   margin-bottom: 10px;
 }
+
 #whatsappButton {
   position: absolute;
   bottom: 3px;
   right: 10px;
-  background-color: #25d366; /* WhatsApp green color */
+  background-color: #25d366;
+  /* WhatsApp green color */
   color: white;
   border: none;
   padding: 10px 20px;
   border-radius: 50px;
   cursor: pointer;
-/* Use the vibrate animation */
- animation: vibrate 0.5s ease infinite; /* Adjust duration and timing as needed */
+  /* Use the vibrate animation */
+  animation: vibrate 0.5s ease infinite;
+  /* Adjust duration and timing as needed */
 }
+
 #whatsappButton:hover {
-  background-color: #128c7e; /* Darker WhatsApp green color on hover */
+  background-color: #128c7e;
+  /* Darker WhatsApp green color on hover */
+}
+
+#buyNowBtn {
+  padding: 10px;
+  background-color: #ceb88b;
+  border: 1px solid #ceb88b;
+  border-radius: 20px;
+}
+
+#buyNowBtn:hover {
+  padding: 10px;
+  background-color: #ceb88b85;
+  cursor: pointer;
+  border: 1px solid #ceb88b;
+
 }
