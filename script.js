@@ -127,7 +127,7 @@ function buyNow() {
   const whatsappNumber = '916265339647'; // Replace with your owner's WhatsApp number
 
   // Create the WhatsApp message
-  const message = `Hello, I would like to buy\n\nProduct Image: ${window.location.origin}${document.getElementById('popupProduct').src}`;
+const message = `Hello, I would like to buy\n\nProduct Image: ${document.getElementById('popupProduct').src}`;
 
   // Create the WhatsApp URL with the message
   const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
